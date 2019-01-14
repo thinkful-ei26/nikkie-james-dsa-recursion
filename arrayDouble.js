@@ -15,4 +15,10 @@ function arrayDouble(arr){
   return [arr[0]*2, ...arrayDouble(arr.slice(1))];
 }
 
-console.log(arrayDouble([1,2,3]));
+//console.log(arrayDouble([1,2,3]));
+
+function iterArrayDouble(arr){
+  return arr.map(element => element *2);
+}
+
+console.log(iterArrayDouble([1,2,3,4 ,5 ]));
