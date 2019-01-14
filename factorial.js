@@ -14,3 +14,13 @@ function factorial(n){
 }
 
 console.log(factorial(3));
+
+function iterFactorial(n){
+  let factorial; 
+  for(let i=0; i<n; i++){
+    factorial*=n; 
+  }
+
+  return factorial;
+}
+console.log(iterFactorial(3));

@@ -33,4 +33,20 @@ let fibonacciArray = (n=0, memo =[])=>{
   }
   return memo.toString(', ');
 };
-console.log(fibonacciArray(20));
+// console.log(fibonacciArray(20));
+
+function iterFib(n){
+  let first=1;
+  let second=1; 
+  let fib;
+
+  for(let i=2; i <n; i++){
+    fib=first + second; 
+    first = second;
+    second = fib;
+  }
+
+  return fib;
+}
+
+console.log(iterFib(7));
