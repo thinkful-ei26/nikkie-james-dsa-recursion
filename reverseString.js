@@ -1,3 +1,4 @@
+'use strict';
 /*
 What is the input to the program
  a string 
@@ -13,11 +14,20 @@ return the remainder of the string
 */
 
 function reverseString(string){
-    //base case
-    if(string===''){
-        return '';
-    }
-    //recursive case
-    return reverseString(string.slice(1)) + string[0];
+  //base case
+  if(string===''){
+    return '';
+  }
+  //recursive case
+  return reverseString(string.slice(1)) + string[0];
 }
 console.log(reverseString('abcdefg'));
+
+function iterReverseString(str){
+  let result =''; 
+  let strArr = str.split("");
+  strArr.map(char=> result = char + result);
+  return result;
+}
+
+console.log(iterReverseString('abcdefg'));
