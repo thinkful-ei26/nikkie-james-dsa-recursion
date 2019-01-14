@@ -40,5 +40,24 @@ function anagrams(str){
   return ret; 
 
 }
+//console.log(anagrams('east'));
+function iterAnagrams(str){
+  let myArray = [];
+  for(let i=0;i< str.length; i++){
+        //do stuff here  
+      // get all the versions that start with 'e'
+  }
+  return myArray;
+}
+console.log(iterAnagrams("east"));
 
-console.log(anagrams('east'));
+/*
+east
+eats
+esat
+esta
+etas
+etsa
+
+
+*/ 
