@@ -41,4 +41,4 @@ function anagrams(str){
 
 }
 
-console.log(anagrams("east"));
+console.log(anagrams('east'));

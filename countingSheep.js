@@ -1,3 +1,4 @@
+'use strict';
 /* what is the input:
 a number (of sheep)
 
@@ -12,13 +13,21 @@ the number of sheep left, with the message
  */
 
 function sheepCounting(number){
-    //base case
-    if(number===0){
-        return ;
-    }
-    //recursive case
-    console.log(number, "Another sheep jump over the fence");
-    sheepCounting(number -1);
+  //base case
+  if(number===0){
+    return ;
+  }
+  //recursive case
+  console.log(number, 'Another sheep jump over the fence');
+  sheepCounting(number -1);
 }
 
 sheepCounting(5);
+
+function iterSheepCounting(number){
+  for(let i=number; i>0; i--){
+    console.log(i, 'Another sheep jump over the fence');
+  }
+}
+
+iterSheepCounting(5);
