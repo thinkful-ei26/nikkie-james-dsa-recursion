@@ -27,7 +27,7 @@ function stringSplitter(str, seperator, index){
   return stringSplitter(str, seperator, index+1);
 }
 
-console.log(stringSplitter('Hi there Nikkie', ' ', 0));
+// console.log(stringSplitter('Hi there Nikkie', ' ', 0));
 
 //Another solution:
 // function stringSplitter(str, splitter) {
@@ -40,3 +40,22 @@ console.log(stringSplitter('Hi there Nikkie', ' ', 0));
 //       return [tempString, ...stringSplitter(str.slice(temp+1),splitter) ]
 //   }
 // }
+
+function iterStringSplitter(str, seperator){
+  let arr=[];
+  let begindex = 0;
+  for(let i=0; i<str.length; i++){
+    if(str[i]===seperator){
+      arr.push(str.slice(begindex,i));
+      begindex=i+1;
+    }
+    else if(i === str.length-1){
+      arr.push(str.slice(begindex,i+1));
+    }
+  }
+  return arr;
+}
+
+console.log(iterStringSplitter("Hi there Nikkie", " "));
+
+// "Hi there Nikkie"
