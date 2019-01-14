@@ -27,10 +27,9 @@ function stringSplitter(str, seperator, index){
   return stringSplitter(str, seperator, index+1);
 }
 
-console.log(stringSplitter('Hi there Nikkie ', ' ', 0));
+console.log(stringSplitter('Hi there Nikkie', ' ', 0));
 
 //Another solution:
-
 // function stringSplitter(str, splitter) {
     
 //   if(str.indexOf(splitter) === -1){
