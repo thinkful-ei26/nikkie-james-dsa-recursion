@@ -28,4 +28,10 @@ function iterTriangles(num){
     return sum;
 }
 
-console.log(iterTriangles(5));
+function test(someNum){
+    for(let i=0; i< someNum; i++){
+        console.log(iterTriangles(i));
+    }
+}
+test(10);
+//console.log(iterTriangles(5));
