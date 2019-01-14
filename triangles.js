@@ -16,6 +16,16 @@ function triangles(number){
     return number + triangles(number - 1);
 
 }
-console.log(triangles(6));
+//console.log(triangles(6));
 //10
 //1, 3, 6, 10, 15, 21, 28, 36, 45, 55
+
+function iterTriangles(num){
+    let sum = 0;
+    for(let i=num; i>0; i--){
+       sum += i;
+    }
+    return sum;
+}
+
+console.log(iterTriangles(5));
